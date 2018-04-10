@@ -302,16 +302,24 @@ $(function () {
 (function ($, window, document, undefined) {
 	var invitationBtn = $('get-invitation-button');
 	$('#get-invitation-button').click(function() {
-		$.ajax({
-		  url: "https://eqvzlhyasj.execute-api.us-east-2.amazonaws.com/production/guests/2",
-		}).done(function(data) {
-			if (data.Count == 1) {
-				var guest = data.Item[0];
-		  	$('#form-name').val(guest.name);
-			} else {
-		  	alert("Invitación Inválida");
-			}
-		});
+		var invitationId = $('#invitation-number').val();
+		if (invitationId == null || invitationId == "") {
+			alert("Ingrese un ID de invitado");
+		} else {
+			$.ajax({
+			  url: "https://eqvzlhyasj.execute-api.us-east-2.amazonaws.com/production/guests/" + invitationId,
+			}).done(function(data) {
+				if (data.Count == 1) {
+					var guest = data.Items[0];
+			  	$('#form-name').val(guest.name);
+			  	$('#form-guest-number').val(guest.guests);
+			  	$('#table-number').val(guest.tableNumber);
+			  	$('#events').val(guest.events);
+				} else {
+			  	alert("Invitación Inválida");
+				}
+			});
+		}
 	});
 }(jQuery, window, document));
 
