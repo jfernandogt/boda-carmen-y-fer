@@ -128,9 +128,9 @@
         </div>
       </section>
       <!-- Love story -->
-      <section id="love-story" class="love-story text-center">
+      <section id="love-story" class="love-story text-center row">
         <div>
-          <h2>HISTORIA DE AM<img src="img/icon-ring-or.png" alt="ring">R</h2>
+          <h2>LOVE ST<img src="img/icon-ring-pink.png" alt="ring">RY</h2>
           <h3>Cómo decidimos que debemos<br> estar juntos <span>para siempre!</span></h3>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
 
@@ -141,14 +141,13 @@
                 <img src="img/timeline-icon.png" alt="Picture">
               </div> <!-- timeline-img -->
               <div class="timeline-item-content">
-                <h3><a href="#">Title of section 1</a></h3>
+                <h3><span>Title of section 1</span></h3>
                 <div class="timeline-item-date">
                   <span>
                     06 Jan 2016
                   </span>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                <a href="#" class="timeline-item-readmore">Read more</a>
               </div> <!-- timeline-content -->
             </div> <!-- timeline-block -->
             <div class="timeline-block_item">
@@ -156,14 +155,13 @@
                 <img src="img/timeline-icon.png" alt="Picture">
               </div> <!-- timeline-img -->
               <div class="timeline-item-content">
-                <h3><a href="#">Title of section 1</a></h3>
+                <h3><span>Title of section 1</span></h3>
                 <div class="timeline-item-date">
                   <span>
                     12 Feb 2016
                   </span>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                <a href="#" class="timeline-item-readmore">Read more</a>
               </div> <!-- timeline-content -->
             </div> <!-- timeline-block -->
             <div class="timeline-block_item">
@@ -171,14 +169,13 @@
                 <img src="img/timeline-icon.png" alt="Picture">
               </div> <!-- timeline-img -->
               <div class="timeline-item-content">
-                <h3><a href="#">Title of section 1</a></h3>
+                <h3><span>Title of section 1</span></h3>
                 <div class="timeline-item-date">
                   <span>
                     03 Mar 2016
                   </span>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                <a href="#" class="timeline-item-readmore">Read more</a>
               </div> <!-- timeline-content -->
             </div> <!-- timeline-block -->
             <div class="timeline-block_item">
@@ -186,14 +183,13 @@
                 <img src="img/timeline-icon.png" alt="Picture">
               </div> <!-- timeline-img -->
               <div class="timeline-item-content">
-                <h3><a href="#">Title of section 1</a></h3>
+                <h3><span>Title of section 1</span></h3>
                 <div class="timeline-item-date">
                   <span>
                     23 Apr 2016
                   </span>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                <a href="#" class="timeline-item-readmore">Read more</a>
               </div> <!-- timeline-content -->
             </div> <!-- timeline-block -->
             <span class="line"></span>
@@ -351,7 +347,7 @@
           <div class="devider">
             <img src="img/devider-color.png" alt="devider">
           </div>
-          <p class="intro-text text-center">Hola, gracias por tomarte tu tiempo en pensar qué nos podrías regalar. Para nosotros es importante la austeridad, por lo mismo hemos decidido que sólo aceptaremos regalos en efectivo para podernos permitir comprar todo aquello necesario en nuestra vida como esposos. Si deseas hacernos un pago en línea puedes utilizar paypal:</p>
+          <p class="intro-text text-center">Hola, gracias por tomarte tu tiempo en pensar qué nos podrías regalar. Lo hemos hecho más simple para ti y nosotros, por lo que aceptaremos pagos en efectivo y paypal.</p>
           <div class="row indent-bottom">
             <div class="col-xs-12 col-sm-12 indent-bottom-sm">
               <a href="#">
@@ -363,35 +359,49 @@
       <!-- Form -->
       <section class="attend">
         <div class="wrap">
-          <form action="form.php" id="contact-form" class="form-horizontal" method="post">
-          <h2 class="text-center">Asistiras a la boda?</h2>
-          <div class="devider">
-            <img src="img/devider-color.png" alt="devider">
+          <div id="form-header">
+            <h2 class="text-center">Asistirás a la boda?</h2>
+            <div class="devider">
+              <img src="img/devider-color.png" alt="devider">
+            </div>
+            <p class="intro-text text-center">Si planeas asistir a nuestra boda, sería de mucha ayuda que completes el formulario</p>
+
+            <div class="row">
+              <div id="name-field" class="form-field col-sm-6">
+                <label for="invitation-number" class="control-label">Ingresa tu # de invitado</label>
+                <input type="number" class="form-control" id="invitation-number" placeholder="123" required>
+              </div>
+              <label class="control-label"></label>
+              <div class="form-field col-sm-6 button-load-data">
+                <button class="btn" id="get-invitation-button">Ver mis datos</button>
+              </div>
+            </div>
           </div>
-          <p class="intro-text text-center">Si planeas asistir a nuestra boda, sería para nosotros de mucha ayuda que completes el formulario</p>
+          <form action="form.php" id="contact-form" class="form-horizontal" method="post">
           <div class="row">
-            <div id="name-field" class="form-field col-sm-12">
+            <div class="form-field col-sm-12">
               <label for="form-name" class="control-label">Nombre completo</label>
-              <input type="text" class="form-control" id="form-name" name="form-name" placeholder="Name" required>
+              <input type="text" class="form-control" id="form-name" name="form-name" placeholder="Name" disabled>
             </div>
-            <div id="email-field" class="form-field col-sm-12">
-              <label for="form-email" class="control-label">Correo</label>
-              <input type="email" class="form-control" id="form-email" name="form-email" placeholder="Email" required>
+            <div class="form-field col-sm-6">
+              <label for="form-guest-number" class="control-label">Número de invitados</label>
+              <input type="text" class="form-control" name="form-guest-number" id="form-guest-number" placeholder="#" disabled>
             </div>
-            <div id="number-field" class="form-field col-sm-6">
-              <label for="form-number" class="control-label">Número de invitados</label>
-              <input type="text" class="form-control" id="form-number" name="form-number" placeholder="#" disabled>
+            <div class="form-field col-sm-6">
+              <label for="table-number" class="control-label">Número de mesa</label>
+              <input type="text" class="form-control" name="table-number" id="table-number" placeholder="#" disabled>
             </div>
-            <div id="select-field" class="form-field col-sm-6 select-wrap">
-              <label for="sel1" class="control-label">Seleccione:</label>
+            <div class="form-field col-sm-12 select-wrap">
+              <label for="sel1" class="control-label">Eventos a los que asistiré:</label>
               <select class="form-control" id="sel1" name="mysel">
                 <option value="All events">Todo el evento</option>
-                <option value="Ceremony">Ceremonia</option>
-                <option value="Party">Fiesta</option>
+                <option value="Ceremony">Sólo Ceremonia</option>
+                <option value="Party">Sólo Fiesta</option>
+                <option value="Ceremony">No Asistiré</option>
               </select>
             </div>
             <div class="col-sm-12 text-center">
-              <button type="submit" class="send-button">Voy a asistir</button>
+              <button type="submit" class="send-button">Guardar</button>
             </div>
           </div>
           </form>

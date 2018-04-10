@@ -15,7 +15,7 @@ Table of Contents:
 6. Select arrow
 7. Map
 8. Gifts list
-9. Blog
+9. Get invitation
 10. Youtube video BG
 
 /* 1. Loader
@@ -297,27 +297,24 @@ $(function () {
 	});
 });
 
-/* 9. Blog
+/* 9. Get invitation
 ==========================================*/
-
-var blog = document.querySelector('.blog');
-
-if (blog) {
-	jQuery(".article-thumb").each(function(){
-		var articleImg = $(this).find('img');
-		$(this).css({
-			'background-image': 'url('+articleImg.attr('src')+')'
+(function ($, window, document, undefined) {
+	var invitationBtn = $('get-invitation-button');
+	$('#get-invitation-button').click(function() {
+		$.ajax({
+		  url: "https://eqvzlhyasj.execute-api.us-east-2.amazonaws.com/production/guests/2",
+		}).done(function(data) {
+			if (data.Count == 1) {
+				var guest = data.Item[0];
+		  	$('#form-name').val(guest.name);
+			} else {
+		  	alert("Invitación Inválida");
+			}
 		});
 	});
-	jQuery("p.entry").each(function(){
-		var review = jQuery(this).html();
-		if( review.length > 200)
-		{
-			review = review.substring(0, 200);
-			jQuery(this).html( review + '<span class="read_more">...</span>' );
-		}
-	});
-}
+}(jQuery, window, document));
+
 /* 10. Youtube video BG
 ==========================================*/
 $(window).on('load', function() {

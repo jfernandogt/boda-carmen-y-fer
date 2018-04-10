@@ -846,7 +846,7 @@ nav.navbar.navbar-default.pink-color .navbar-nav li a:hover:after {
 }
 .love-story h3 span {
 	font-family: "Amatic SC", cursive;
-	color: #d75166;
+	color: #bf3a3e;
 	font-weight: 700;
 }
 .love-story p {
@@ -1583,15 +1583,20 @@ nav.navbar.navbar-default.pink-color .navbar-nav li a:hover:after {
 }
 /* -3.11. Form
 -------------------------------------------------------------- */
-form {
+form, #form-header {
 	max-width: 400px;
 	margin: 0 auto;
 }
+
+#form-header {
+	color: #fff;
+}
+
 select {
 	cursor: pointer;
 }
 select option {
-	background: #ffab68;
+	background: #fa6569;
 }
 .form-field {
 	padding-bottom: 17px;
@@ -1812,7 +1817,7 @@ footer p {
 	margin: 0px auto;
 	padding-left: 100px;
 	padding-right: 100px;
-	background-color: #ffab68;
+	background-color: #fa6569;
 }
 .theme-flowers .love-story h2 {
 	color: #fc7910;
@@ -1853,7 +1858,7 @@ footer p {
 	background: #fff;
 }
 .theme-flowers .love-story .timeline-vertical .line:after, .theme-flowers .love-story .timeline-vertical .line:before {
-	background: url(../img/timeline-top-icon.png) no-repeat;
+	background: url(../img/timeline-top-orange.png) no-repeat;
 }
 .theme-flowers .love-story .horizontal-timeline .timeline {
 	width: 100%;
@@ -1883,7 +1888,7 @@ footer p {
 	background-color: #fc7910;
 }
 .theme-flowers .events .ev-icon {
-	border: 2px solid #ffab68;
+	border: 2px solid #fa6569;
 	color: #B38A37;
 }
 .theme-flowers .events .ev-icon:hover {
@@ -1972,7 +1977,7 @@ footer p {
 	background: #eac268;
 }
 .theme-color.yellow-rose .love-story {
-	background: #ffab68;
+	background: #fa6569;
 }
 .theme-color.pink-rose {
 	background: url(../img/pattern/roses.jpg) repeat;
@@ -1991,7 +1996,7 @@ footer p {
 	background: #bbd0d5;
 }
 .theme-color.pale-blue .love-story {
-	background: #bbd0d5;
+	background: #fa6569;
 }
 .theme-color.big-hearts {
 	background: url(../img/pattern/big-hearts.jpg) repeat;
@@ -2141,15 +2146,76 @@ footer p {
 		display: none;
 	}
 }
-
-.theme-color .love-story {
-	margin: 0px auto;
-	padding-left: 100px;
-	padding-right: 100px;
-	background-color: #bbd0d5;
+/*.theme-color .love-story {
+	padding: 72px 14% 95px;
 }
 .theme-color .love-story h2 {
-	color: #fc7910;
+	color: #fea2a5;
+}
+.theme-color .love-story h3 {
+	color: #fff;
+}
+.theme-color .love-story h3 span {
+	color: #bf3a3e;
+}
+.theme-color .love-story p {
+	color: #fff;
+}
+.theme-color .love-story .timeline-vertical .timeline-item-content {
+	border-color: #fff;
+}
+.theme-color .love-story .timeline-vertical .timeline-item-content h3 a {
+	color: #fff;
+}
+.theme-color .love-story .timeline-vertical .timeline-item-content h3 a:hover {
+	color: #bf3a3e;
+}
+.theme-color .love-story .timeline-vertical .timeline-item-readmore {
+	border-color: #fff;
+	color: #fff;
+}
+.theme-color .love-story .timeline-vertical .timeline-item-readmore:hover {
+	border-color: #bf3a3e;
+	color: #bf3a3e;
+}
+.theme-color .love-story .timeline-vertical .line {
+	background: #fff;
+}
+.theme-color .love-story .horizontal-timeline .timeline {
+	width: 100%;
+}
+.theme-color .love-story .horizontal-timeline .events-wrapper:before, .theme-color .love-story .horizontal-timeline .events-wrapper:after {
+	background-image: none;
+}
+.theme-color .love-story .horizontal-timeline .events a:hover::after, .theme-color .love-story .horizontal-timeline .events a.older-event::after, .theme-color .love-story .horizontal-timeline .events a.selected::after {
+	background-color: #bf3a3e;
+	border-color: #bf3a3e;
+}
+.theme-color .love-story .horizontal-timeline .timeline-navigation a:hover {
+	border-color: #bf3a3e;
+	color: #bf3a3e;
+}
+.theme-color .love-story .horizontal-timeline .timeline-navigation a.inactive {
+	cursor: not-allowed;
+}
+.theme-color .love-story .horizontal-timeline .timeline-navigation a.inactive:hover {
+	color: #dfdfdf;
+	border-color: #dfdfdf;
+}
+.theme-color .love-story .horizontal-timeline h2, .theme-color .love-story .horizontal-timeline em {
+	color: #fff;
+}
+.theme-color .love-story .horizontal-timeline .filling-line {
+	background-color: #bf3a3e;
+}
+*/
+
+.theme-color .love-story {
+	padding: 72px 14% 95px;
+}
+.theme-color .love-story h2 {
+	font-family: "Playfair Display", serif;
+	color: #fea2a5;
 }
 .theme-color .love-story h3, .theme-color .love-story p {
 	color: #fff;
@@ -2163,17 +2229,18 @@ footer p {
 .theme-color .love-story .timeline-vertical .timeline-item-content {
 	border-color: #fff;
 }
-.theme-color .love-story .timeline-vertical .timeline-item-content h3 a {
+
+.theme-color .love-story .timeline-vertical .timeline-item-content h3 span {
 	color: #fff;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
 }
-.theme-color .love-story .timeline-vertical .timeline-item-content h3 a:hover {
-	color: #fc7910;
-}
+
 .theme-color .love-story .timeline-vertical .timeline-item-date {
-	background: url(../img/lovestory-ribbon-orange.png) no-repeat;
+	background: url(../img/lovestory-ribbon-white.png) no-repeat;
 }
 .theme-color .love-story .timeline-vertical .timeline-item-date span {
-	color: #fff;
+	color: #000;
 }
 .theme-color .love-story .timeline-vertical .timeline-item-readmore {
 	border-color: #fff;
@@ -2186,9 +2253,7 @@ footer p {
 .theme-color .love-story .timeline-vertical .line {
 	background: #fff;
 }
-.theme-color .love-story .timeline-vertical .line:after, .theme-color .love-story .timeline-vertical .line:before {
-	background: url(../img/timeline-top-orange.png) no-repeat;
-}
+
 .theme-color .love-story .horizontal-timeline .timeline {
 	width: 100%;
 }
@@ -2575,4 +2640,12 @@ footer p {
 	.single-post + footer {
 		display: none;
 	}
+}
+
+.button-load-data {
+	color: #000;
+}
+
+input[disabled] {
+	background-color: rgba(250, 250, 250, 0.35) !important;
 }
