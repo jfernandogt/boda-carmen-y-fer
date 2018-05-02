@@ -2405,7 +2405,7 @@ footer p {
 .theme-color .location .col-sm-6 {
 	margin-bottom: 50px;
 }
-.theme-color .location .col-sm-6:before {
+.theme-color .location .col-sm-12:before {
 	content: "";
 	display: block;
 	position: absolute;
@@ -2416,7 +2416,7 @@ footer p {
 	left: 50%;
 	margin-left: -46px;
 }
-.theme-color .location .col-sm-6:after {
+.theme-color .location .col-sm-12:after {
 	content: "";
 	display: block;
 	position: absolute;
