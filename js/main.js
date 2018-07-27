@@ -160,55 +160,6 @@ if(galleryCarousel) {
 		}
 	});
 }
-
-/* 5. Form
-===================================*/
-(function ($, window, document, undefined) {
-	var $form = $('#contact-form');
-	$form.submit(function (e) {
-		// remove the error class
-		$('.form-group').removeClass('has-error');
-		$('.help-block').remove();
-		// get the form data
-		var formData = {
-			'name' : $('input[name="form-name"]').val(),
-			'email' : $('input[name="form-email"]').val(),
-			'number' : $('input[name="form-number"]').val(),
-			'select' : $("#sel1 option:selected").val()
-		};
-		// process the form
-		$.ajax({
-			type : 'POST',
-			url  : 'form.php',
-			data : formData,
-			dataType : 'json',
-			encode : true
-		}).done(function (data) {
-			// handle errors
-			if (!data.success) {
-				if (data.errors.name) {
-					$('#name-field').addClass('has-error');
-					$('#name-field').find('.col-sm-6').append('<span class="help-block">' + data.errors.name + '</span>');
-				}
-				if (data.errors.email) {
-					$('#email-field').addClass('has-error');
-					$('#email-field').find('.col-sm-6').append('<span class="help-block">' + data.errors.email + '</span>');
-				}
-				if (data.errors.number) {
-					$('#number-field').addClass('has-error');
-					$('#number-field').find('.col-sm-6').append('<span class="help-block">' + data.errors.subject + '</span>');
-				}
-			} else {
-				// display success message
-				$form.html('<div class="message-success">' + data.message + '</div>');
-			}
-		}).fail(function (data) {
-			// for debug
-			// console.log(data);
-		});
-		e.preventDefault();
-	});
-}(jQuery, window, document));
 /* 6. Select arrow
 =======================================*/
 $(document).on('click', function(event) {
@@ -300,8 +251,9 @@ $(function () {
 /* 9. Get invitation
 ==========================================*/
 (function ($, window, document, undefined) {
-	var invitationBtn = $('get-invitation-button');
-	$('#get-invitation-button').click(function() {
+	var $form = $('#contact-form');
+	$form.submit(function (e) {
+		e.preventDefault();
 		var invitationId = $('#invitation-number').val();
 		if (invitationId == null || invitationId == "") {
 			alert("Ingrese un ID de invitado");

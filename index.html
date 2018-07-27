@@ -440,20 +440,15 @@
       <section class="attend">
         <div class="wrap">
           <div id="form-header">
-            <h2 class="text-center">¿Asistirás a la boda?</h2>
+            <h2 class="text-center">Tu invitación</h2>
             <div class="devider">
               <img src="img/devider-color.png" alt="devider">
             </div>
-            <p class="intro-text text-center">Si planeas asistir a nuestra boda, sería de mucha ayuda que completes el formulario</p>
 
             <div class="row">
               <div id="name-field" class="form-field col-sm-6">
-                <label for="invitation-number" class="control-label">Ingresa tu # de invitado</label>
+                <label for="invitation-number" class="control-label">Ingresa tu # de invitación</label>
                 <input type="number" class="form-control" id="invitation-number" placeholder="123" required>
-              </div>
-              <label class="control-label"></label>
-              <div class="form-field col-sm-6 button-load-data">
-                <button class="btn" id="get-invitation-button">Ver mi invitación</button>
               </div>
             </div>
           </div>
@@ -471,17 +466,8 @@
               <label for="table-number" class="control-label">Número de mesa</label>
               <input type="text" class="form-control" name="table-number" id="table-number" placeholder="#" disabled>
             </div>
-            <div class="form-field col-sm-12 select-wrap">
-              <label for="events" class="control-label">Eventos a los que asistiré:</label>
-              <select class="form-control" id="events" name="events">
-                <option value="All events">Todo el evento</option>
-                <option value="Ceremony">Sólo Ceremonia</option>
-                <option value="Party">Sólo Fiesta</option>
-                <option value="None">No Asistiré</option>
-              </select>
-            </div>
             <div class="col-sm-12 text-center">
-              <button type="submit" class="send-button">Guardar</button>
+              <button type="submit" class="send-button" id="get-invitation-button">Ver Invitación</button>
             </div>
           </div>
           </form>
