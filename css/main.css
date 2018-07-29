@@ -2152,69 +2152,6 @@ footer p {
 		display: none;
 	}
 }
-/*.theme-color .love-story {
-	padding: 72px 14% 95px;
-}
-.theme-color .love-story h2 {
-	color: #fea2a5;
-}
-.theme-color .love-story h3 {
-	color: #fff;
-}
-.theme-color .love-story h3 span {
-	color: #bf3a3e;
-}
-.theme-color .love-story p {
-	color: #fff;
-}
-.theme-color .love-story .timeline-vertical .timeline-item-content {
-	border-color: #fff;
-}
-.theme-color .love-story .timeline-vertical .timeline-item-content h3 a {
-	color: #fff;
-}
-.theme-color .love-story .timeline-vertical .timeline-item-content h3 a:hover {
-	color: #bf3a3e;
-}
-.theme-color .love-story .timeline-vertical .timeline-item-readmore {
-	border-color: #fff;
-	color: #fff;
-}
-.theme-color .love-story .timeline-vertical .timeline-item-readmore:hover {
-	border-color: #bf3a3e;
-	color: #bf3a3e;
-}
-.theme-color .love-story .timeline-vertical .line {
-	background: #fff;
-}
-.theme-color .love-story .horizontal-timeline .timeline {
-	width: 100%;
-}
-.theme-color .love-story .horizontal-timeline .events-wrapper:before, .theme-color .love-story .horizontal-timeline .events-wrapper:after {
-	background-image: none;
-}
-.theme-color .love-story .horizontal-timeline .events a:hover::after, .theme-color .love-story .horizontal-timeline .events a.older-event::after, .theme-color .love-story .horizontal-timeline .events a.selected::after {
-	background-color: #bf3a3e;
-	border-color: #bf3a3e;
-}
-.theme-color .love-story .horizontal-timeline .timeline-navigation a:hover {
-	border-color: #bf3a3e;
-	color: #bf3a3e;
-}
-.theme-color .love-story .horizontal-timeline .timeline-navigation a.inactive {
-	cursor: not-allowed;
-}
-.theme-color .love-story .horizontal-timeline .timeline-navigation a.inactive:hover {
-	color: #dfdfdf;
-	border-color: #dfdfdf;
-}
-.theme-color .love-story .horizontal-timeline h2, .theme-color .love-story .horizontal-timeline em {
-	color: #fff;
-}
-.theme-color .love-story .horizontal-timeline .filling-line {
-	background-color: #bf3a3e;
-}
-*/
 
 .theme-color .love-story {
 	padding: 72px 14% 95px;
@@ -2237,9 +2174,10 @@ footer p {
 }
 
 .theme-color .love-story .timeline-vertical .timeline-item-content h3 span {
-	color: #fff;
+  color: #fff;
   font-family: "Playfair Display", serif;
   font-weight: 500;
+  font-size: 27px;
 }
 
 .theme-color .love-story .timeline-vertical .timeline-item-date {
