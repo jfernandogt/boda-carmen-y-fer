@@ -1650,7 +1650,7 @@ select option {
 	padding-bottom: 20px;
 }
 .location p {
-	font-size: 0.875em;
+	font-size: 1em;
 }
 .ev-name {
 	font-family: "Playfair Display", serif;
@@ -1999,7 +1999,7 @@ footer p {
 	background: url(../img/pattern/hearts.jpg) repeat;
 }
 .theme-color.pale-blue .wrapper {
-	background: #bbd0d5;
+	background: #8fb8de;
 }
 .theme-color.pale-blue .love-story {
 	background: #fa6569;
